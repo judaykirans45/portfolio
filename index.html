@@ -7,6 +7,46 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 0.5rem;
+      }
+
+      .skills-icons, .contact-icons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero {
+        padding: 6rem 1rem 2rem;
+      }
+
+      .skills-icons .skill, .contact-icons a {
+        width: auto;
+        text-align: center;
+      }
+
+      .contact-icons a {
+        font-size: 1.5rem;
+        width: 60px;
+        height: 60px;
+      }
+
+      #theme-toggle {
+        margin-right: 0;
+        align-self: flex-end;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -18,6 +58,7 @@
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
       <a href="#certifications">Certifications</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -25,7 +66,7 @@
   </header>
 
   <section class="hero" data-aos="fade-down">
-    <h1>Hi I'm Uday Kiran<br><span class="typing">An Aspiring Full-Stack Developer</span></h1>
+    <h1>Hi I'm Uday Kiran<br><span class="typing">Aspiring Full-Stack Developer</span></h1>
   </section>
 
   <section id="about" class="section" data-aos="fade-up">
@@ -51,6 +92,15 @@
     <h2>Projects</h2>
     <ul>
       <li>Personal Portfolio Website</li>
+    </ul>
+  </section>
+
+  <section id="education" class="section" data-aos="fade-up">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.Tech in Computer Science and Engineering</strong><br>
+        Bheema Institute of Technology and Science, Adoni, Kurnool district<br>
+        Graduated in 2024 | 71%</li>
     </ul>
   </section>
 
